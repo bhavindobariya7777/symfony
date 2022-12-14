@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}News!
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Title</th>
+					<th scope="col">Description</th>
+					<th scope="col">Image</th>
+					<th scope="col">Created Date</th>
+					<th scope="col">Updated Date</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				{% for data in newsList %}
+					<tr>
+						<th scope="row">{{data.id}}</th>
+						<td><img src="{{data.image}}" height="100px" width="100px"/></td>
+						<td>{{data.title}}</td>
+						<td>{{data.description}}</td>
+						<td>{{data.created_at}}</td>
+						<td>{{data.updated_at}}</td>
+					</tr>
+				{% endfor %}
+
+			</tbody>
+		</table>
+
+
+		<nav aria-label="...">
+			<ul class="pagination pagination-lg">
+				{% for i in range(1, pagesCount) %}
+					<li class="page-item {{ (page==i) ? 'disabled' : 'no' }}"> 
+						<a class="page-link" href="/news/{{ i }}">{{ i }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+
+{% endblock %}
