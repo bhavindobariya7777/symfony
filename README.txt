@@ -1,14 +1,14 @@
-=>SYMFONY PRACTICAL 
-->INSTALL COMPOSER: composer install
+  SYMFONY PRACTICAL TEST
 
-->DATABASE: it's available in our root folder file name is "symfony_practical.sql" OR run migration both way created.
+1)INSTALL COMPOSER: composer install
 
+2) DATABASE: it's available in our root folder file name is "symfony_practical.sql" OR run migration both way created.
 
-->START PROJECT: symfony server:start
+3) START PROJECT: symfony server:start
 
-->VIEW NEWS LIST: https://127.0.0.1:8000/news/1
+4)VIEW NEWS LIST: https://127.0.0.1:8000/news/1
 
-->CREAT CUSTOME COMMAND NAME: php bin/console tecoreng (SCRAPPING HIGHLIGHT NEWS WEBSIDE AND ADD ENTRY TO DATABASE)
+5)CREAT CUSTOME COMMAND NAME: php bin/console tecoreng (SCRAPPING HIGHLIGHT NEWS WEBSIDE AND ADD ENTRY TO DATABASE)
 
 
 
